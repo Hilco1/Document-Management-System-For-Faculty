@@ -4,15 +4,6 @@ Document Management System designed for academic institutions.
 The system centralizes faculty documents (syllabi, decisions, schedules, announcements) and enhances them using NLP techniques such as OCR, automatic summarization, tag extraction, and semantic search.
 
 ---
-
-| Metric    | Score |
-| --------- | ----- |
-| Precision | 0.82  |
-| Recall    | 0.76  |
-| F1-Score  | 0.79  |
-
-
----
 ## 💢 Problem Statement
 
 Academic institutions often store documents across multiple locations (websites, email threads, archives), making retrieval and auditing inefficient.
@@ -45,6 +36,22 @@ This system solves the problem by:
        alt="System Architecture" 
        width="580"/>
 </p>
+
+---
+
+## Evaluation
+
+| Metric    | Score |
+| --------- | ----- |
+| Precision | 0.82  |
+| Recall    | 0.76  |
+| F1-Score  | 0.79  |
+
+The model achieves strong precision, indicating that most generated tags are relevant and accurate.
+
+Recall is slightly lower, suggesting that while the system performs well, some relevant tags may occasionally be missed.
+
+Overall, the results demonstrate that the tag extraction component provides reliable and consistent performance for academic document processing.
 
 ---
 
