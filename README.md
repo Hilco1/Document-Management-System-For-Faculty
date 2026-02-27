@@ -53,55 +53,51 @@ Dataset/
 └── synthetic/  
 ```
 ---
-📊 Dataset Description 
+## 📊 Dataset Description
 
-The dataset consists of publicly available academic and administrative documents from the Faculty of Electrical Engineering (ETF). 
+The dataset consists of publicly available academic and administrative documents from the Faculty of Electrical Engineering (ETF).
 
-Document Types 
+### **Document Types**
 
-Syllabus 
+- Syllabus  
+- Decision  
+- Schedule  
+- Ranking / Results  
+- Regulation  
+- Announcement  
 
-Decision  
+### **Synthetic Data**
 
-Schedule 
+Due to limited labeled data, synthetic text augmentation was used to:
 
-Ranking/Results 
+- Improve class balance  
+- Increase robustness of tag extraction  
 
-Regulation 
+Synthetic data is used strictly for model robustness and evaluation purposes.
 
-Announcement 
+---
 
-Synthetic Data 
+## ⚙️ Technologies Used
 
-Due to limited labeled data, synthetic text augmentation was used to: 
+- Flask  
+- SQLAlchemy  
+- Sentence-Transformers  
+- HuggingFace Transformers (T5)  
+- spaCy  
+- KeyBERT  
+- PyMuPDF  
+- pdfplumber  
+- Tesseract OCR  
 
-Improve class balance 
+---
 
-Increase robustness of tag extraction 
+## 🖥 Installation
 
-Synthetic data is used strictly for model robustness and evaluation purposes. 
+### **Clone Repository**
 
- 
-
-⚙️ Technologies Used 
-
-Flask 
-
-SQLAlchemy 
-
-Sentence-Transformers 
-
-HuggingFace Transformers (T5) 
-
-spaCy 
-
-KeyBERT 
-
-PyMuPDF 
-
-pdfplumber 
-
-Tesseract OCR
+```bash
+git clone <your-repository-url>
+cd Faculty-DMS
 
 ## 🧠 NLP Processing Pipeline
 
