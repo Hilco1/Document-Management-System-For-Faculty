@@ -56,6 +56,7 @@ This system solves the problem by:
 ## 🗂 Project Structure
 
 
+<img width="348" height="448" alt="1" src="https://github.com/user-attachments/assets/eaa09267-0154-494a-813f-e15f98962cf1" />
 
 Code/
 │
