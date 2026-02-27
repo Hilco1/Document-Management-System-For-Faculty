@@ -33,7 +33,7 @@ This system solves the problem by:
 <p align="center">
   <img src="https://github.com/user-attachments/assets/3ba2e9d4-6a06-4d10-b599-291f6ff8a53c" 
        alt="System Architecture" 
-       width="700"/>
+       width="580"/>
 </p>
 
 ---
