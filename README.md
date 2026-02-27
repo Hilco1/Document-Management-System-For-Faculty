@@ -93,7 +93,9 @@ Synthetic data is used strictly for model robustness and evaluation purposes.
 
 ## 🖥 Installation
 The application will start locally and can be accessed in your browser.
+
 Clone repository
+
 ```bash
 git clone https://github.com/Hilco1/Document-Management-System-For-Faculty.git
 cd Document-Management-System-For-Faculty 
