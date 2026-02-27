@@ -54,8 +54,8 @@ Synthetic data is used strictly for model robustness and evaluation purposes.
 ---
    
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/3ba2e9d4-6a06-4d10-b599-291f6ff8a53c" 
-       alt="System Architecture" 
+  <img width="1536" height="1024" alt="ML pipeline" src="https://github.com/user-attachments/assets/05aa460e-f68b-4d47-bd55-cc106010f9be" />
+       alt="System Architecture and Pipeline" 
        width="580"/>
 </p>
 
@@ -98,16 +98,6 @@ Dataset/
 └── synthetic/  
 ```
 ---
-## ML Pipeline
-
-<p align="center">
-  <img width="580" height="640" 
-       alt="ML Pipeline" 
-       src="https://github.com/user-attachments/assets/bff0131a-a65b-481f-a4f1-d8a36c55c419" />
-</p>
-
----
-
 ## ⚙️ Technologies Used
 
 - Flask  
