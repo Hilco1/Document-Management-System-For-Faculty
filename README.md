@@ -171,7 +171,3 @@ python app.py
 ---
 ## 📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-<img width="1911" height="730" alt="Search Results" src="https://github.com/user-attachments/assets/0959e1af-ecb3-45ab-9182-2991c6dee57d" />
-
-
