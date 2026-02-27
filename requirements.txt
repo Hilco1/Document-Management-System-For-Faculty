@@ -1,0 +1,16 @@
+flask
+flask_sqlalchemy
+flask_bcrypt
+flask_login
+
+sentence-transformers
+transformers
+torch
+keybert
+spacy
+numpy
+
+pytesseract
+pdfplumber
+PyMuPDF
+Pillow
