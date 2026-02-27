@@ -136,3 +136,5 @@ python app.py
  
 The application will start locally and can be accessed in your browser.
 ---
+## 📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
