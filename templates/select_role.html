@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h4 class="mb-3">Select Active Role</h4>
+<form method="POST">
+  <select name="selected_role" class="form-select mb-3">
+    <option value="{{ current_user.role }}">{{ current_user.role|capitalize }} (Primary)</option>
+    <option value="student">Student</option>
+    <option value="professor">Professor</option>
+    <option value="admin">Administrator</option>
+  </select>
+  <button class="btn btn-primary">Continue</button>
+</form>
+{% endblock %}

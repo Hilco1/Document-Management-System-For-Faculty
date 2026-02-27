@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Pending Document Approvals</h2>
+
+{% if docs|length == 0 %}
+<p>No pending documents.</p>
+{% else %}
+<table class="table">
+    <thead>
+        <tr>
+            <th>Filename</th>
+            <th>Uploader</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for d in docs %}
+        <tr>
+            <td>{{ d.filename }}</td>
+            <td>{{ d.uploader.email }}</td>
+            <td>
+                <a href="{{ url_for('approve', doc_id=d.id) }}" class="btn btn-success btn-sm">Approve</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endif %}
+
+{% endblock %}

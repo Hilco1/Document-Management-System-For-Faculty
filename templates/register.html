@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card mx-auto mt-5" style="max-width: 450px;">
+    <div class="card-body">
+        <h3 class="text-center mb-3">Register</h3>
+
+        <form method="POST">
+            <div class="mb-3">
+                <label>Email:</label>
+                <input class="form-control" type="email" name="email" required>
+            </div>
+
+            <div class="mb-3">
+                <label>Password:</label>
+                <input class="form-control" type="password" name="password" required>
+            </div>
+
+            <div class="mb-3">
+                <label>Role:</label>
+                <select class="form-select" name="role" required>
+                    <option value="admin">Admin</option>
+                    <option value="professor">Professor</option>
+                    <option value="assistant">Assistant</option>
+                    <option value="student">Student</option>
+                </select>
+            </div>
+
+            <button class="btn btn-primary w-100">Register</button>
+        </form>
+
+        <hr>
+        <p class="text-center">
+            Already have an account? <a href="{{ url_for('login') }}">Login</a>
+        </p>
+    </div>
+</div>
+{% endblock %}

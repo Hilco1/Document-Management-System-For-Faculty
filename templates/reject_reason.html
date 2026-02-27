@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="card shadow-sm">
+    <div class="card-body">
+        <h4>Reject Document</h4>
+
+        <form method="POST">
+            <div class="mb-3">
+                <label class="form-label">Reason for rejection</label>
+                <textarea class="form-control" name="reason" rows="4" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-danger">Confirm</button>
+            <a href="{{ url_for('dashboard') }}" class="btn btn-secondary">Cancel</a>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

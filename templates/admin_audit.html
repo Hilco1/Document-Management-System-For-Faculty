@@ -1,0 +1,179 @@
+{% extends "base.html" %}
+{% block content %}
+
+<style>
+.audit-header th {
+    background-color: #0d6efd !important;
+    color: white !important;
+    font-weight: 600;
+    border: none;
+}
+
+.action-badge {
+    padding: 6px 14px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 20px;
+    letter-spacing: 0.4px;
+    color: white;
+}
+
+/* FILE INTERACTIONS */
+.badge-download {
+    background-color: #0d6efd; /* primary blue */
+}
+
+.badge-upload {
+    background-color: #26d6cd; /* teal / turquoise */
+}
+
+.badge-open {
+    background-color: #f97316; /* clean orange */
+}
+
+/* DESTRUCTIVE */
+.badge-delete {
+    background-color: #dc3545;
+}
+
+.badge-reject {
+    background-color: #b91c1c;
+}
+
+/* POSITIVE */
+.badge-approve {
+    background-color: #0c721d;
+}
+
+/* NEW VERSION  */
+.badge-new-version {
+    background-color: #6e19cf;
+}
+
+/* FALLBACK */
+.badge-other {
+    background-color: #6c757d;
+}
+</style>
+
+<div class="container mt-4">
+
+    <h3 class="fw-bold mb-4">System Audit Log</h3>
+
+    {% if logs|length == 0 %}
+        <div class="alert alert-info">
+            No audit activity found.
+        </div>
+    {% else %}
+
+    <div class="table-responsive shadow-sm rounded">
+
+        <table class="table table-hover align-middle mb-0">
+
+            <thead class="audit-header">
+                <tr>
+                    <th class="text-center">User ID</th>
+                    <th>Role</th>
+                    <th>Action</th>
+                    <th>Document</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                {% for log in logs %}
+                <tr>
+
+                    <td class="text-center fw-semibold">
+                        {{ log.user_id }}
+                    </td>
+
+                    <td class="fw-semibold">
+                        {{ log.user_role.capitalize() }}
+                    </td>
+
+                    <td>
+
+                        {% if log.action == 'DELETE' %}
+                            <span class="badge action-badge badge-delete">
+                                Delete
+                            </span>
+
+                        {% elif log.action == 'REJECT' %}
+                            <span class="badge action-badge badge-reject">
+                                Reject
+                            </span>
+
+                        {% elif log.action == 'APPROVE' %}
+                            <span class="badge action-badge badge-approve">
+                                Approve
+                            </span>
+
+                        {% elif log.action == 'NEW_VERSION' %}
+                            <span class="badge action-badge badge-new-version">
+                                New Version
+                            </span>
+
+                        {% elif log.action == 'DOWNLOAD' %}
+                            <span class="badge action-badge badge-download">
+                                Download
+                            </span>
+
+                        {% elif log.action == 'OPEN' %}
+                            <span class="badge action-badge badge-open">
+                                Open
+                            </span>
+
+                        {% elif log.action == 'UPLOAD' %}
+                            <span class="badge action-badge badge-upload">
+                                Upload
+                            </span>
+
+                        {% else %}
+                            <span class="badge action-badge badge-other">
+                                {{ log.action.replace('_', ' ').title() }}
+                            </span>
+                        {% endif %}
+
+                    </td>
+
+                    <td style="max-width:350px; word-break:break-word;">
+                        {{ log.document_name }}
+                    </td>
+
+                    <td class="fw-semibold">
+                        {{ log.timestamp.strftime('%d.%m.%Y') }}
+                    </td>
+
+                    <td class="fw-semibold">
+                        {{ log.timestamp.strftime('%H:%M') }}
+                    </td>
+
+                    <td>
+                        {% if log.version %}
+                            <span class="badge rounded-pill px-3 py-2"
+                                  style="background-color:#f1f3f5; color:#495057; font-weight:600;">
+                                v{{ log.version }}
+                            </span>
+                        {% else %}
+                            —
+                        {% endif %}
+                    </td>
+
+                </tr>
+                {% endfor %}
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    {% endif %}
+
+</div>
+
+{% endblock %}

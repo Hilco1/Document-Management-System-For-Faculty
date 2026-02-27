@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-md-4">
+    <h3 class="mb-3 text-center">Login</h3>
+    <form method="POST">
+      <input class="form-control mb-2" name="email" placeholder="Email" type="email">
+      <input class="form-control mb-2" name="password" placeholder="Password" type="password">
+      <button class="btn btn-primary w-100">Login</button>
+    </form>
+    <div class="text-center mt-2">
+      <a href="{{ url_for('register') }}">Create an account</a>
+    </div>
+  </div>
+</div>
+{% endblock %}

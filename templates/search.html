@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3 class="mb-4">
+    Search Results for: "{{ q }}"
+</h3>
+
+{% if results %}
+
+    {% for doc in results %}
+        <div class="card shadow-sm mb-4">
+
+            <div class="card-body">
+
+                <div class="d-flex justify-content-between">
+                    <h5 class="card-title">
+                        {{ doc.filename }}
+                    </h5>
+
+                    <span class="badge bg-secondary">
+                        v{{ doc.version }}
+                    </span>
+                </div>
+
+                <p class="text-muted small">
+                    {{ doc.summary[:300] }}...
+                </p>
+
+                <!-- TAGOVI -->
+                <div class="mb-3">
+                    {% if doc.tags %}
+                        {% for tag in doc.tags.split(',') %}
+                            <span class="badge rounded-pill bg-info text-dark me-1">
+                                {{ tag }}
+                            </span>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+
+                <a href="{{ url_for('open_document', doc_id=doc.id) }}"
+                   class="btn btn-primary btn-sm">
+                    Open
+                </a>
+
+            </div>
+        </div>
+    {% endfor %}
+
+{% else %}
+
+    <div class="alert alert-warning">
+        No documents found.
+    </div>
+
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3>History for {{ doc.filename }} (v{{ doc.version }})</h3>
+
+<ul class="list-group mt-3">
+    {% for log in logs %}
+    <li class="list-group-item">
+        <strong>{{ log.action }}</strong>
+        by {{ log.user_role }}
+        at {{ log.timestamp.strftime('%d %b %Y %H:%M') }}
+
+        {% if log.old_status and log.new_status %}
+            ({{ log.old_status }} → {{ log.new_status }})
+        {% endif %}
+
+        {% if log.details %}
+            <div class="text-muted">{{ log.details }}</div>
+        {% endif %}
+    </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

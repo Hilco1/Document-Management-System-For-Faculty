@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container text-center mt-5">
+    <h3 class="mb-4">Select Your Role</h3>
+
+    <form method="POST">
+        <button class="btn btn-primary m-2" name="role" value="admin">Administrator</button>
+        <button class="btn btn-info m-2" name="role" value="professor">Professor</button>
+        <button class="btn btn-success m-2" name="role" value="student">Student</button>
+    </form>
+</div>
+{% endblock %}

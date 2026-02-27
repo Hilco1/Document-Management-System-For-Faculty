@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>Pending Approvals</h3>
+{% for d in docs %}
+<div class="d-flex justify-content-between align-items-center border p-2 mb-2">
+  <span>{{ d.filename }}</span>
+  <a href="/approve/{{ d.id }}" class="btn btn-sm btn-success">Approve</a>
+</div>
+{% else %}
+<p>No pending files.</p>
+{% endfor %}
+{% endblock %}

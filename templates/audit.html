@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2>Audit Logs</h2>
+
+    <table class="table table-bordered table-striped mt-3">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>User</th>
+                <th>Role</th>
+                <th>Action</th>
+                <th>Document</th>
+                <th>Old Status</th>
+                <th>New Status</th>
+                <th>Version</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for log in logs %}
+            <tr>
+                <td>{{ log.timestamp }}</td>
+                <td>{{ log.user_email }}</td>
+                <td>{{ log.user_role }}</td>
+                <td><strong>{{ log.action }}</strong></td>
+                <td>{{ log.document_name }}</td>
+                <td>{{ log.old_status }}</td>
+                <td>{{ log.new_status }}</td>
+                <td>{{ log.version }}</td>
+                <td>{{ log.details }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
