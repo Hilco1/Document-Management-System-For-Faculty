@@ -29,7 +29,9 @@ This system solves the problem by:
    - Embedding generation  
 4. Database Storage  
 5. Semantic Search & Approval Workflow
-                                   <img width="470" height="305" alt="Pipeline" src="https://github.com/user-attachments/assets/3ba2e9d4-6a06-4d10-b599-291f6ff8a53c" />
+   
+      <img width="470" height="305" alt="Pipeline" src="https://github.com/user-attachments/assets/3ba2e9d4-6a06-4d10-b599-291f6ff8a53c" />
+   
 ---
 
 ## 🗂 Project Structure
