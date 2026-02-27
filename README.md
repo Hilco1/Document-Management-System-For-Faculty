@@ -1,11 +1,11 @@
-# Faculty Document Management System (AI-Powered)
+# 📁 Document Management System For Faculty
 
 Document Management System designed for academic institutions.  
 The system centralizes faculty documents (syllabi, decisions, schedules, announcements) and enhances them using NLP techniques such as OCR, automatic summarization, tag extraction, and semantic search.
 
 ---
 
-## 🎯 Problem Statement
+## Problem Statement
 
 Academic institutions often store documents across multiple locations (websites, email threads, archives), making retrieval and auditing inefficient.
 
