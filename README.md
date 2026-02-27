@@ -63,8 +63,11 @@ Dataset/
 ---
 ## ML Pipeline
 
-<img width="580" height="640" alt="ML Pipline" src="https://github.com/user-attachments/assets/bff0131a-a65b-481f-a4f1-d8a36c55c419" />
-
+<p align="center">
+  <img width="580" height="640" 
+       alt="ML Pipeline" 
+       src="https://github.com/user-attachments/assets/bff0131a-a65b-481f-a4f1-d8a36c55c419" />
+</p>
 
 ---
 ## 📊 Dataset Description
