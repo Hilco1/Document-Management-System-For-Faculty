@@ -61,10 +61,10 @@ Dataset/
 └── synthetic/  
 ```
 ---
+ML Pipeline
 
-<p align="center">
-  <img src="Documentation/images/ml_pipeline.png" alt="ML Pipeline" width="700"/>
-</p>
+<img width="792" height="717" alt="ML Pipline" src="https://github.com/user-attachments/assets/bff0131a-a65b-481f-a4f1-d8a36c55c419" />
+
 
 ---
 ## 📊 Dataset Description
