@@ -94,7 +94,7 @@ Synthetic data is used strictly for model robustness and evaluation purposes.
 ## 🖥 Installation
 Clone repository
 ```bash
-git clone [[<your-repository-url>](https://github.com/Hilco1/Document-Management-System-For-Faculty/tree/main)](https://github.com/Hilco1/Document-Management-System-For-Faculty.git)
+git clone https://github.com/Hilco1/Document-Management-System-For-Faculty.git
 cd Document-Management-System-For-Faculty 
 ```
 Create Virtual Environment
