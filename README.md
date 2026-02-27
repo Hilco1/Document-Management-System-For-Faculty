@@ -5,6 +5,14 @@ The system centralizes faculty documents (syllabi, decisions, schedules, announc
 
 ---
 
+| Metric    | Score |
+| --------- | ----- |
+| Precision | 0.82  |
+| Recall    | 0.76  |
+| F1-Score  | 0.79  |
+
+
+---
 ## 💢 Problem Statement
 
 Academic institutions often store documents across multiple locations (websites, email threads, archives), making retrieval and auditing inefficient.
