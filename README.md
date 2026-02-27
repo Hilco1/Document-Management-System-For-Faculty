@@ -53,12 +53,7 @@ Synthetic data is used strictly for model robustness and evaluation purposes.
 
 ---
    
-<p align="center">
   <img width="1536" height="1024" alt="ML pipeline" src="https://github.com/user-attachments/assets/05aa460e-f68b-4d47-bd55-cc106010f9be" />
-       alt="System Architecture and Pipeline" 
-       width="580"/>
-</p>
-
 ---
 
 ## Evaluation
