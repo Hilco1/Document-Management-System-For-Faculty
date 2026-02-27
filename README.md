@@ -103,12 +103,6 @@ Dataset/
 └── synthetic/  
 ```
 ---
-
-## 🖼 Dashboard Preview
-
-<img width="1410" height="509" alt="Screenshot 2026-02-27 235931" src="https://github.com/user-attachments/assets/afb6d474-8b29-40e8-95bc-92958f9ee299" />
-
----
 ## ⚙️ Technologies Used
 
 - Flask  
@@ -123,6 +117,12 @@ Dataset/
 
 ---
 
+## 🖼 Dashboard Preview
+
+<img width="1410" height="509" alt="Screenshot 2026-02-27 235931" src="https://github.com/user-attachments/assets/afb6d474-8b29-40e8-95bc-92958f9ee299" />
+
+
+---
 ## 🖥 Installation
 The application will start locally and can be accessed in your browser.
 
