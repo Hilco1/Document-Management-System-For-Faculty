@@ -24,7 +24,7 @@ This system solves the problem by:
 1. Document Upload  
 2. OCR & Text Extraction  
 3. NLP Processing  
-   - Summary generation                                                <img width="470" height="305" alt="Pipeline" src="https://github.com/user-attachments/assets/3ba2e9d4-6a06-4d10-b599-291f6ff8a53c" />
+   - Summary generation                                                              <img width="470" height="305" alt="Pipeline" src="https://github.com/user-attachments/assets/3ba2e9d4-6a06-4d10-b599-291f6ff8a53c" />
    - Tag extraction  
    - Embedding generation  
 4. Database Storage  
