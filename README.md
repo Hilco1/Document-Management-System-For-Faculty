@@ -1,5 +1,16 @@
 # 📁 Document Management System For Faculty
 
+## 📌 Table of Contents
+
+- [Problem Statement](#-problem-statement)
+- [Dataset Description](#-dataset-description)
+- [System Architecture](#-system-architecture)
+- [Evaluation](#evaluation)
+- [Project Structure](#-project-structure)
+- [Technologies Used](#-technologies-used)
+- [Installation](#-installation)
+- [License](#-license)
+
 Document Management System designed for academic institutions.  
 The system centralizes faculty documents (syllabi, decisions, schedules, announcements) and enhances them using NLP techniques such as OCR, automatic summarization, tag extraction, and semantic search.
 
