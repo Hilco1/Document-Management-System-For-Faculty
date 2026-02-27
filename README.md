@@ -17,6 +17,28 @@ This system solves the problem by:
 - Supporting document approval workflows
 
 ---
+## 📊 Dataset Description
+
+The dataset consists of publicly available academic and administrative documents from the Faculty of Electrical Engineering (ETF).
+
+### **Document Types**
+
+- Syllabus  
+- Decision  
+- Schedule  
+- Ranking / Results  
+- Regulation  
+- Announcement  
+
+### **Synthetic Data**
+
+Due to limited labeled data, synthetic text augmentation was used to:
+
+- Improve class balance  
+- Increase robustness of tag extraction  
+
+Synthetic data is used strictly for model robustness and evaluation purposes.
+---
 
 ## 🏗 System Architecture
 
@@ -83,29 +105,6 @@ Dataset/
        alt="ML Pipeline" 
        src="https://github.com/user-attachments/assets/bff0131a-a65b-481f-a4f1-d8a36c55c419" />
 </p>
-
----
-## 📊 Dataset Description
-
-The dataset consists of publicly available academic and administrative documents from the Faculty of Electrical Engineering (ETF).
-
-### **Document Types**
-
-- Syllabus  
-- Decision  
-- Schedule  
-- Ranking / Results  
-- Regulation  
-- Announcement  
-
-### **Synthetic Data**
-
-Due to limited labeled data, synthetic text augmentation was used to:
-
-- Improve class balance  
-- Increase robustness of tag extraction  
-
-Synthetic data is used strictly for model robustness and evaluation purposes.
 
 ---
 
