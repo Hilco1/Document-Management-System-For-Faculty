@@ -92,30 +92,50 @@ Synthetic data is used strictly for model robustness and evaluation purposes.
 ---
 
 ## 🖥 Installation
-
-### **Clone Repository**
-
+Clone repository
 ```bash
 git clone <your-repository-url>
-cd Faculty-DMS
+cd Faculty-DMS 
+```
+Create Virtual Environment
+```bash
+python -m venv venv
+```
+Activate virtual environment:
 
-## 🧠 NLP Processing Pipeline
+Windows:
+```bash
+venv\Scripts\activate
+```
+Mac / Linux:
+```bash
+source venv/bin/activate
+```
 
-- Automatic summarization (T5 Transformer)  
-- Named Entity Recognition (spaCy)  
-- Keyword extraction (KeyBERT)  
-- Domain-based tag refinement  
-- Embedding generation (SentenceTransformers)  
-
----
 
 
----
+Install dependencies
+```bash
+pip install -r requirements.txt
+```
 
-## ✅ Workflow Support
+Install spaCy model
+```bash
+python -m spacy download en_core_web_sm
+```
+Install Tesseract OCR
 
-- Role-based access  
-- Document approval flag  
-- Timestamped uploads  
+Make sure Tesseract OCR is installed on your system.
 
+After installation, update the Tesseract path inside the project if necessary:
+```bash
+pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe
+```
+
+Run application
+```bash
+python app.py
+```
+ 
+The application will start locally and can be accessed in your browser.
 ---
