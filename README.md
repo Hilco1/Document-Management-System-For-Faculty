@@ -61,6 +61,11 @@ Dataset/
 └── synthetic/  
 ```
 ---
+
+<img width="792" height="717" alt="ML Pipline" src="https://github.com/user-attachments/assets/6b2f8fbe-28a5-4523-bea5-34e970483bea" />
+
+
+---
 ## 📊 Dataset Description
 
 The dataset consists of publicly available academic and administrative documents from the Faculty of Electrical Engineering (ETF).
