@@ -19,39 +19,6 @@ This system solves the problem by:
 
 ---
 
-## 📥 Document Ingestion
-
-- Upload PDF or image files  
-- Automatic OCR for scanned documents  
-- Table-aware PDF extraction  
-
----
-
-## 🧠 NLP Processing Pipeline
-
-- Automatic summarization (T5 Transformer)  
-- Named Entity Recognition (spaCy)  
-- Keyword extraction (KeyBERT)  
-- Domain-based tag refinement  
-- Embedding generation (SentenceTransformers)  
-
----
-
-## 🔎 Semantic Search
-
-- Embedding-based similarity search  
-- Context-aware retrieval instead of keyword-only matching  
-
----
-
-## ✅ Workflow Support
-
-- Role-based access  
-- Document approval flag  
-- Timestamped uploads  
-
----
-
 ## 🏗 System Architecture
 
 1. Document Upload  
@@ -83,8 +50,31 @@ Dataset/
 │   ├── pdf/
 │   └── images/
 ├── processed/
-└── synthetic/
+└── synthetic/  
+```
+---
 
-Documentation/
-Results/
-Presentations/
+## 🧠 NLP Processing Pipeline
+
+- Automatic summarization (T5 Transformer)  
+- Named Entity Recognition (spaCy)  
+- Keyword extraction (KeyBERT)  
+- Domain-based tag refinement  
+- Embedding generation (SentenceTransformers)  
+
+---
+
+## 🔎 Semantic Search
+
+- Embedding-based similarity search  
+- Context-aware retrieval instead of keyword-only matching  
+
+---
+
+## ✅ Workflow Support
+
+- Role-based access  
+- Document approval flag  
+- Timestamped uploads  
+
+---
