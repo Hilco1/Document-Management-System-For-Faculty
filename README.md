@@ -56,6 +56,7 @@ This system solves the problem by:
 ## 🗂 Project Structure
 
 
+
 Code/
 │
 ├── app.py
@@ -65,6 +66,7 @@ Code/
 ├── ml_pipeline/
 ├── templates/
 └── static/
+
 
 Dataset/
 ├── raw/
@@ -76,6 +78,7 @@ Dataset/
 Documentation/
 Results/
 Presentations/
+
 
 
 ---
