@@ -64,10 +64,6 @@ Dataset/
 
 ---
 
-## 🔎 Semantic Search
-
-- Embedding-based similarity search  
-- Context-aware retrieval instead of keyword-only matching  
 
 ---
 
