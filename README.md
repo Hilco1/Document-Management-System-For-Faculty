@@ -123,10 +123,7 @@ Install spaCy model
 ```bash
 python -m spacy download en_core_web_sm
 ```
-Install Tesseract OCR
-
-Make sure Tesseract OCR is installed on your system.
-
+Install Tesseract OCR. Make sure Tesseract OCR is installed on your system.
 After installation, update the Tesseract path inside the project if necessary:
 ```bash
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe
